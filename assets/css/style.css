@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+.header .flex-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header .flex-div .img {
+  max-width: 100%;
+  width: 200px;
+}
+.header .flex-div .ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header .flex-div .ul .li {
+  min-width: 100px;
+}
+.header .flex-div .ul .li .link {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.header .flex-div .phone-link {
+  text-decoration: none;
+  font-weight: 300;
+  color: #000;
+}
+
+/* HERO-SECTION */
+
+.hero-sec {
+  width: 100%;
+  min-height: 300px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-sec .heading {
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 600;
+  font-size: 60px;
+  margin-bottom: 2rem;
+}
+.hero-sec .border {
+  width: 180px;
+  height: 5px;
+  border-radius: 100px;
+  background-image: linear-gradient(90deg, rgba(251, 154, 193, 0), #fff);
+}
+
+/* BLOG-SECTION */
+
+.blog-sec {
+  padding: 2rem 0rem;
+  width: 90%;
+  margin: auto;
+}
+.blog-sec .blog-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 0rem;
+}
+.blog-sec .blog-flex .blog-card {
+  width: 48%;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 22px 34px 0 rgb(0 0 0 / 6%);
+  padding: 2rem;
+}
+.blog-sec .blog-flex .blog-card .img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+.blog-sec .blog-flex .blog-card .heading {
+  color: #202146;
+  font-size: 2.2em;
+  line-height: 1.2em;
+  font-weight: 700;
+  margin: 1rem 0;
+  min-height: 130px;
+}
+.blog-sec .blog-flex .blog-card .para {
+  margin-bottom: 24px;
+  color: #9899ad;
+  font-size: 15px;
+  line-height: 22px;
+}
+.blog-sec .blog-flex .blog-card .dateText {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  padding: 3rem 5rem 0 5rem;
+  border-top: 2px solid #f6f6f6;
+}
+.footer .flex-div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px 10px;
+}
+.footer .flex-div .col {
+  flex-grow: 1;
+}
+.footer .flex-div .col-first {
+  width: 30%;
+}
+.footer .flex-div .col .img {
+  max-width: 100%;
+  width: 200px;
+  margin-bottom: 1rem;
+}
+.footer .flex-div .col .para {
+  color: #1e2833;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+  width: 80%;
+}
+.footer .flex-div .col .heading {
+  color: #d53030;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 22px;
+  text-transform: capitalize;
+}
+.footer .flex-div .col .ul {
+  list-style: none;
+}
+.footer .flex-div .col .ul .li .link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #1e2833;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.footer .flex-div .col .ul .li-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer .flex-div .col .ul .li-flex .icon {
+  max-width: 100%;
+  width: 18px;
+  height: 18px;
+}
+.footer .flex-div .col .ul .li-flex .link {
+  padding-left: 10px;
+}
+.footer .copyText {
+  display: block;
+  margin-right: 32px;
+  padding: 20px 0 10px 0;
+  color: rgba(30, 40, 51, 0.5);
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* MEDIA-QUERIES */
+
+@media only screen and (max-width:992px) {
+    .header {
+        width: 90%;
+    }
+    .header .flex-div .ul .li {
+        min-width: 85px;
+        padding: 10px 0;
+    }
+    .phone-link {
+        display: none;
+    }
+    .blog-sec .blog-flex .blog-card {
+        width: 100%;
+    }
+    .blog-sec .blog-flex .blog-card .heading {
+        min-height: auto;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .footer .flex-div .col,
+        .footer .flex-div .col-first {
+        width: 100%;
+    }
+}
